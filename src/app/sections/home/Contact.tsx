@@ -3,7 +3,7 @@ import ContactInformation from './Contact/ContactInformation';
 
 const Contact = () => {
   return (
-    <div className='relative mx-[36px] sm:mt-20'>
+    <div className='relative mx-[36px] mt-5 sm:mt-20'>
       <h2 className='text-[13px] font-extrabold md:text-[45px]'>KONTAKT</h2>
       <div className='absolute -left-[36px] top-7 w-[137px] border-[1px] border-black md:left-[-178px] md:top-16 md:w-[1413px] md:border-[3px]'></div>
 

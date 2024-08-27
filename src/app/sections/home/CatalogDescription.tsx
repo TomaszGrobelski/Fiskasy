@@ -2,7 +2,7 @@ import React from 'react';
 
 const CatalogDescription = () => {
   return (
-    <div className='text-[12px] font-light mt-[48px] max-h-[434px]  text-left leading-[14px]  px-[36px] space-y-3 md:hidden '>
+    <div className='text-[12px] font-light mt-[48px] h-auto  text-left leading-[14px]  px-[36px] space-y-3 md:hidden '>
       <p>
         Powyżej przedstawiamy Państwu katalog kas fiskalnych ONLINE. Kasy rejestrujące ONLINE, to nowy rodzaj kas posiadający możliwość łączenia się z
         siecią internetową, w celu przesyłania danych do Centralnego Repozytorium Kas. Kasy fiskalne ONLINE łączą się z repozytorium standardowo co
