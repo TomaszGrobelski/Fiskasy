@@ -55,7 +55,18 @@ const RedView = ({ toggleState }: IRedView) => {
           width={70}
           height={70}
           alt='right arrow '
-          className='z-40 hidden translate-x-[-500%] md:absolute md:left-1/2 md:top-[632px] md:block md:h-[70px] md:w-[70px] md:transform lg:top-[562px] xl:translate-x-[-800%]'
+          className='z-40 hidden translate-x-[-500%] md:absolute md:left-1/2 md:top-[632px] md:block md:h-[70px] md:w-[70px] md:transform lg:top-[612px] lg:translate-x-[-650%] xl:translate-x-[-800%]'
+          onClick={toggleState}
+        />
+      </button>
+      {/* W prawo */}
+      <button>
+        <Image
+          src='/icons/hero/alj@2x.png'
+          width={70}
+          height={70}
+          alt='right arrow '
+          className='z-50 hidden translate-x-[700%] md:absolute md:left-1/2 md:top-[600px] xl:block md:h-[70px] md:w-[70px] md:translate-x-[450%] md:transform lg:top-[562px] lg:translate-x-[600%] xl:translate-x-[700%]'
           onClick={toggleState}
         />
       </button>
@@ -64,7 +75,7 @@ const RedView = ({ toggleState }: IRedView) => {
 
       <PriceNetto />
 
-      <div className='absolute right-[50px] top-[710px] flex-col gap-[1px] text-[13px] text-white md:top-[1008px] md:text-[30px] md:text-black xl:left-[30px] xl:flex 2xl:left-[142px]'>
+      <div className='absolute right-[50px] top-[710px] flex-col gap-[1px] text-[13px] text-white md:top-[1008px] md:text-[30px] md:text-black xl:left-[30px] xl:top-[328px] xl:flex 2xl:left-[142px]'>
         <p className='text-left font-extrabold'>MASZ PYTANIE?</p>
         <p className='text-left font-light'>WYŚLIJ WIADOMOŚĆ</p>
       </div>

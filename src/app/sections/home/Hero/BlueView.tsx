@@ -191,6 +191,17 @@ const BlueView = ({ toggleState }: IBlueView) => {
           onClick={toggleState}
         />
       </button>
+      {/* W lewo  */}
+      <button>
+        <Image
+          src='/icons/hero/alo@2x.png'
+          width={70}
+          height={70}
+          alt='right arrow '
+          className='z-40 hidden translate-x-[-500%] md:absolute md:left-1/2 md:top-[632px] xl:block md:h-[70px] md:w-[70px] md:transform lg:top-[562px] xl:translate-x-[-800%]'
+          onClick={toggleState}
+        />
+      </button>
 
       {/* BG: */}
       <BlueCircle className='absolute left-[-210px] top-[170px] -z-10 h-[609px] w-[609px] sm:left-[-100px] sm:h-[650px] sm:w-[650px] md:left-1/2 md:top-[183px] md:h-[1084px] md:w-[1084px] md:-translate-x-1/2 md:transform' />
