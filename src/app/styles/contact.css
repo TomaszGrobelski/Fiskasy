@@ -1,0 +1,7 @@
+.customContactBgElement {
+    position: absolute;
+
+    border-radius: 28% 72% 46% 54% / 55% 31% 69% 45%;
+    background: #c4ecfc;
+    opacity: 1;
+  }

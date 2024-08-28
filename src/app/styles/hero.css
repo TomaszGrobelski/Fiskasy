@@ -1,7 +1,11 @@
 .customHeroImage {
-  transform: matrix(0.96, 0.28, -0.28, 0.96, 0, 0);
+  /* transform: matrix(0.96, 0.28, -0.28, 0.96, 0, 0); */
   /* box-shadow: 0px 10px 99px #000000; */
   background: transparent url('/img/4c9698501e37cce71c5b4649bd9e.png') 0% 0% no-repeat padding-box;
+}
+
+.customHeroBg {
+  border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
 }
 
 .customHeroBg {

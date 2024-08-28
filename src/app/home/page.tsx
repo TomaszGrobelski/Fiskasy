@@ -21,7 +21,6 @@ const Home = () => {
         <Promotions />
         <CatalogDescription />
         <Contact />
-        {/* <MapLocalization /> */}
         <About />
         <Footer />
       </MainContainer>
