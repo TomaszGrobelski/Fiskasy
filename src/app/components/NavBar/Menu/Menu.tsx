@@ -17,7 +17,7 @@ const Menu = ({ toggleMenu }: IMenu) => {
       animate={{ x: 0 }}
       exit={{ x: '100%' }}
       transition={{ type: '', stiffness: 300, damping: 30, duration: 0.5 }}
-      className='fixed inset-0 z-50 flex'
+      className='fixed inset-0 z-[200] flex'
     >
       <div onClick={toggleMenu} className='h-screen w-screen'></div>
 

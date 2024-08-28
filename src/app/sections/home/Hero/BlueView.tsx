@@ -187,7 +187,7 @@ const BlueView = ({ toggleState }: IBlueView) => {
           width={70}
           height={70}
           alt='right arrow '
-          className='z-50 hidden translate-x-[700%] md:absolute md:left-1/2 md:top-[600px] md:block md:h-[70px] md:w-[70px] md:translate-x-[450%] md:transform lg:top-[562px] lg:translate-x-[600%] xl:translate-x-[700%]'
+          className='z-30 hidden translate-x-[700%] md:absolute md:left-1/2 md:top-[600px] md:block md:h-[70px] md:w-[70px] md:translate-x-[450%] md:transform lg:top-[562px] lg:translate-x-[600%] xl:translate-x-[700%]'
           onClick={toggleState}
         />
       </button>
