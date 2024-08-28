@@ -35,7 +35,7 @@ const About = () => {
 
         <p>
           Strona <span className='underline'>www.kasy-fiskalne-krakow.pl </span>jest własnością firmy <span className='font-extrabold'>ESC SA</span>{' '}
-          Portal skupia się na obsłudze firm w Krakowie oraz całej Małopolsce. Obsługa ogólnopolska urządzeń fiskalnych opisana jest a stronie
+          Portal skupia się na obsłudze firm w Krakowie oraz całej Małopolsce. Obsługa ogólnopolska urządzeń fiskalnych opisana jest na stronie
           fiskasy.pl
         </p>
       </div>

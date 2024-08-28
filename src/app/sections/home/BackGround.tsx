@@ -14,9 +14,9 @@ const BackGround = () => {
       <svg width={376} height={376} className='hidden md:absolute md:left-[1502px] md:top-[-64px] md:block md:h-[376px] md:w-[376px]'>
         <circle cx='188' cy='188' r='180' stroke='#ffffff' strokeWidth='3' fill='none' strokeDasharray='10 10' />
       </svg>
-      <BlueCircle className='absolute left-[-210px] top-[170px] h-[609px] w-[609px] md:left-1/2 md:top-[183px] md:h-[1084px] md:w-[1084px] md:-translate-x-1/2 md:transform' />
+      <BlueCircle className='absolute left-[-210px] top-[170px] h-[609px] w-[609px] sm:w-[650px] sm:h-[650px] sm:left-[-100px] md:left-1/2 md:top-[183px] md:h-[1084px] md:w-[1084px] md:-translate-x-1/2 md:transform' />
 
-      <BlueCircle className='customHeroBg left-[-461.3px] top-[-154.04px] -z-20 h-[1052px] w-[1157px] bg-lightBlue bg-left-top bg-no-repeat md:left-1/2 md:top-[-400px] md:h-[2200px] md:w-[2100px] md:-translate-x-1/2 md:transform' />
+      <BlueCircle className='customHeroBg left-[-461.3px] top-[-154.04px] -z-20 h-[1052px] w-[1157px] sm:h-[1200px] sm:w-[1357px] bg-lightBlue bg-left-top bg-no-repeat md:left-1/2 md:top-[-400px] md:h-[2200px] md:w-[2100px] md:-translate-x-1/2 md:transform' />
 
       <IconBox2 className='-z-10 hidden md:absolute md:left-1/2 md:top-[189px] md:grid md:h-[175px] md:w-[174px] md:translate-x-[-300%] md:transform' />
 
@@ -26,22 +26,22 @@ const BackGround = () => {
       <svg
         width={640}
         height={640}
-        className='hidden md:absolute md:left-1/2 md:top-[212px] md:block md:h-[640px] md:w-[640px] md:translate-x-[-104%] md:transform'
+        className='hidden md:absolute md:left-[60%] md:top-[212px] xl:left-1/2 xl:top-[212px] md:block md:h-[640px] md:w-[640px] md:translate-x-[-104%] md:transform'
       >
         <circle cx='320' cy='320' r='310' stroke='#000000' strokeWidth='3' fill='none' strokeDasharray='5 10' />
       </svg>
-      <DashedCircle className='left-[-133px] top-[262px] z-10 h-[359px] w-[359px] md:hidden' />
+      <DashedCircle className='left-[-133px] sm:left-[-23px] top-[262px] z-10 h-[359px] w-[359px] md:hidden' />
 
-      <IconBox className='absolute left-[307px] top-[157px] md:left-1/2 md:top-[183px] md:h-[100px] md:w-[100px] md:translate-x-[355%] md:transform' />
+      <IconBox className='absolute left-[307px] sm:left-[430px] top-[157px] md:left-1/2 md:top-[183px] md:h-[100px] md:w-[100px] md:translate-x-[355%] md:transform' />
 
       {/* Okrąg ceny 1429 */}
-      <svg width={245} height={245} className='absolute left-[207px] top-[597px] h-[245px] w-[245px] md:hidden'>
+      <svg width={245} height={245} className='absolute left-[207px] sm:left-[317px] top-[597px] h-[245px] w-[245px] md:hidden'>
         <circle cx='122.5' cy='122.5' r='120' stroke='#FFFFFF' strokeWidth='1' fill='none' strokeDasharray='3 3' />
       </svg>
       <svg
         width={245}
         height={245}
-        className='hidden md:absolute md:left-1/2 md:top-[787px] md:block md:h-[376px] md:w-[376px] md:translate-x-[57%] md:transform'
+        className='hidden md:absolute md:left-1/2 md:top-[787px] md:block md:h-[376px] md:w-[376px] md:translate-x-[3%] xl:translate-x-[57%] md:transform'
       >
         <circle cx='188' cy='188' r='180' stroke='#FFFFFF' strokeWidth='3' fill='none' strokeDasharray='10 10' />
       </svg>

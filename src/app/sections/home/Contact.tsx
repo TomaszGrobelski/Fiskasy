@@ -43,7 +43,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className='flex  w-full flex-col items-center relative left-[-36px] md:left-[0px]'>
+      <div className='flex  w-full flex-col items-center relative left-[0px]'>
         <div className='relative mt-[39px] flex w-screen max-w-[1920px] items-center md:mt-0'>
           {/* Obrazki po bokach */}
           <Image src='/images/contact/ajx.png' width={960} height={314} alt='localization icon' className='w-1/2 object-contain' />

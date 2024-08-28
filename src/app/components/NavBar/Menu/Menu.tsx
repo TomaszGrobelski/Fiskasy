@@ -1,14 +1,24 @@
+'use client';
+
 import Image from 'next/image';
 import { Icon } from '@iconify/react/dist/iconify.js';
+import { motion } from 'framer-motion';
 
 import '@/app/styles/menu.css';
 
 interface IMenu {
   toggleMenu: VoidFunction;
 }
+
 const Menu = ({ toggleMenu }: IMenu) => {
   return (
-    <div className='fixed inset-0 z-50 flex'>
+    <motion.div
+      initial={{ x: '100%' }}
+      animate={{ x: 0 }}
+      exit={{ x: '100%' }}
+      transition={{ type: '', stiffness: 300, damping: 30, duration: 0.5 }}
+      className='fixed inset-0 z-50 flex'
+    >
       <div onClick={toggleMenu} className='h-screen w-screen'></div>
 
       <div className='menu-container flex flex-col items-center overflow-y-auto overflow-x-hidden'>
@@ -16,12 +26,15 @@ const Menu = ({ toggleMenu }: IMenu) => {
           <Icon icon='lets-icons:close-round' width={24} />
         </button>
 
-        <input
-          type='text'
-          name=''
-          placeholder='Wyszukaj...'
-          className='mr-4 mt-[8px] h-[39px] max-w-[150px] self-end border-b-[1px] border-gray bg-transparent pl-4 text-black outline-none placeholder:text-black'
-        />
+        <div className='relative -right-20 top-3 mr-4 mt-[8px]'>
+          <input
+            type='text'
+            name=''
+            placeholder='Wyszukaj...'
+            className='h-[39px] max-w-[150px] self-end border-b-[1px] border-gray bg-transparent pl-4 pr-8 text-black outline-none placeholder:text-black'
+          />
+          <Icon icon='fluent:search-32-regular' fontSize={24} className='absolute right-2 top-2' />
+        </div>
 
         <div className='mt-8 flex flex-col items-center text-[30px]'>
           <p>Sklep</p>
@@ -58,21 +71,41 @@ const Menu = ({ toggleMenu }: IMenu) => {
 
         <div className='mt-[58px] flex items-center gap-[33px]'>
           <button>
-            <Image src='/icons/hero/flags/ua.svg' width={45} height={30} alt='Poland ' className='h-[30px] w-[45px] object-contain' />
+            <Image
+              src='/icons/hero/flags/ua.svg'
+              width={45}
+              height={30}
+              alt='Poland '
+              className='h-[30px] w-[45px] object-contain'
+            />
           </button>
           <button>
-            <Image src='/icons/hero/flags/gb.svg' width={45} height={30} alt='Poland ' className='h-[30px] w-[45px] object-contain' />
+            <Image
+              src='/icons/hero/flags/gb.svg'
+              width={45}
+              height={30}
+              alt='Poland '
+              className='h-[30px] w-[45px] object-contain'
+            />
           </button>
 
           <button className='border-b-[2px] border-black pb-1'>
-            <Image src='/icons/hero/flags/pl.svg' width={45} height={30} alt='Poland ' className='h-[30px] w-[45px] object-contain' />
+            <Image
+              src='/icons/hero/flags/pl.svg'
+              width={45}
+              height={30}
+              alt='Poland '
+              className='h-[30px] w-[45px] object-contain'
+            />
           </button>
         </div>
 
         {/* Information */}
 
         <div className='my-[120px] flex flex-col items-center text-[20px]'>
-          <h2 className='w-full text-end text-[20px] font-extrabold text-black'>WYBIERZ SWOJĄ BRANŻE I POZNAJ URZĄDZENIA</h2>
+          <h2 className='w-full text-end text-[20px] font-extrabold text-black'>
+            WYBIERZ SWOJĄ BRANŻE I POZNAJ URZĄDZENIA
+          </h2>
           <div className='relative right-[-65px] mt-[15px] w-[180px] rounded-l-xl border-[3px] border-black'></div>
 
           <ul className='flex flex-col items-center space-y-4 pt-[60px] text-[15px]'>
@@ -111,7 +144,7 @@ const Menu = ({ toggleMenu }: IMenu) => {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

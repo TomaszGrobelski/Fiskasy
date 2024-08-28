@@ -32,7 +32,11 @@ function CarouselProvider({ children }: CarouselProviderProps) {
   const [index, setIndex] = useState<number>(0);
   const [itemsCount, setItemsCount] = useState<number>(0);
 
-  return <CarouselContext.Provider value={{ index, setIndex, itemsCount, setItemsCount }}>{children}</CarouselContext.Provider>;
+  return (
+    <CarouselContext.Provider value={{ index, setIndex, itemsCount, setItemsCount }}>
+      {children}
+    </CarouselContext.Provider>
+  );
 }
 
 type Carousel = {
@@ -60,10 +64,18 @@ function CarouselNavigation({ className, classNameButton, alwaysShow }: Carousel
   const { index, setIndex, itemsCount } = useCarousel();
 
   return (
-    <div className={cn('pointer-events-none z-50 absolute left-[-12.5%] top-1/2 flex w-[125%] -translate-y-1/2 justify-between px-2', className)}>
+    <div
+      className={cn(
+        'pointer-events-none absolute left-[-12.5%] top-1/2 z-50 flex w-[125%] -translate-y-1/2 justify-between px-2',
+        className,
+      )}
+    >
       <button
         type='button'
-        className={cn('pointer-events-auto h-fit w-fit hidden xl:block rounded-full p-2 transition-opacity duration-300', classNameButton)}
+        className={cn(
+          'pointer-events-auto hidden h-fit w-fit rounded-full p-2 transition-opacity duration-300 xl:block',
+          classNameButton,
+        )}
         disabled={index === 0}
         onClick={() => {
           if (index > 0) {
@@ -75,7 +87,10 @@ function CarouselNavigation({ className, classNameButton, alwaysShow }: Carousel
       </button>
       <button
         type='button'
-        className={cn('pointer-events-auto translate-x-[-30%] z-50  h-fit w-fit rounded-full hidden xl:block p-2 transition-opacity duration-300', classNameButton)}
+        className={cn(
+          'pointer-events-auto z-50 hidden h-fit w-fit translate-x-[-30%] rounded-full p-2 transition-opacity duration-300 xl:block',
+          classNameButton,
+        )}
         disabled={index + 1 === itemsCount}
         onClick={() => {
           if (index < itemsCount - 1) {
@@ -210,7 +225,13 @@ type CarouselItemProps = {
 };
 
 function CarouselItem({ children, className }: CarouselItemProps) {
-  return <motion.div className={cn('w-full min-w-0 min-h-[180px] md:min-h-[360px] shrink-0 grow-0 overflow-hidden', className)}>{children}</motion.div>;
+  return (
+    <motion.div
+      className={cn('min-h-[240px] flex justify-center items-center sm:min-h-[250px] w-full min-w-0 shrink-0 grow-0 overflow-hidden md:min-h-[380px]', className)}
+    >
+      {children}
+    </motion.div>
+  );
 }
 
 export { Carousel, CarouselContent, CarouselNavigation, CarouselIndicator, CarouselItem, useCarousel };

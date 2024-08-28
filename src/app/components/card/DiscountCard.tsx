@@ -9,8 +9,8 @@ interface IDiscountCarD {
 }
 const DiscountCard = ({ title, image, price }: IDiscountCarD) => {
   return (
-    <div className='relative flex h-[151px] w-[95px] flex-col items-center rounded-[14px] bg-white shadow-discountBoxShadow md:h-[331px] md:w-[240px] md:rounded-[35px]'>
-      <p className='px-6 pt-[8px] text-center text-[6px] font-extrabold leading-[8px] md:text-[20px] md:leading-[24px]'>{title}</p>
+    <div className='relative flex h-[151px] w-[95px] flex-col items-center sm:scale-[1.35] rounded-[14px] bg-white shadow-discountBoxShadow md:scale-75 lg:scale-100 md:h-[331px] md:w-[240px] md:rounded-[35px]'>
+      <p className='px-6 pt-[8px] text-center text-[6px] sm:text-[10px] font-extrabold leading-[8px] sm:leading-[10px] md:text-[20px] md:leading-[24px]'>{title}</p>
       <Image src={image} width={95} height={101} alt='discount product' className='relative -top-6 md:hidden' />
       <Image src={image} width={322} height={229} alt='discount product' className='hidden md:relative md:-top-16 md:block' />
       <BlueCircle className='left-[50px] top-[110px] h-[40px] w-[40px] md:left-[160px] md:top-[208px] md:h-[100px] md:w-[100px]'>
